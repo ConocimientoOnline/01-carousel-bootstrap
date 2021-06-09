@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slider Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src='js.js'></script>
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="pantalla_grande_img1" id='img1' onclick="ocultar_imagen_grande01();">
+    <img src="imgs/city01.jpg">
+  </div>
+  <div class="pantalla_grande_img2" id='img2' onclick="ocultar_imagen_grande02();">
+    <img src="imgs/city.jpg">
+  </div>
+  <div class="pantalla_grande_img3" id='img3' onclick="ocultar_imagen_grande03();">
+    <img src="imgs/city02.jpg">
+  </div>
+  <div class="pantalla_grande_img4" id='img4' onclick="ocultar_imagen_grande04();">
+    <img src="imgs/city03.jpg">
+  </div>
+  <div class="menu-header">
+    <div class="opc1">Services</div>
+    <div class="opc2">Work</div>
+    <div class="opc3">Contact</div>
+    <div class="opc4">About Us</div>
+  </div>
+  <div id="carouselExampleIndicators" class='carousel slide' data-ride='carousel'>
+    <ol class="carousel-indicators">
+      <li data-target='#carouselExampleIndicators' data-slide-to='0' class='actiive'></li>
+      <li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
+      <li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active item">
+        <img class='d-block w-100' src='imgs/starwars.jpg' alt='First Slide'>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>CIty Black and White</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img class='d-block w-100' src='imgs/tokyo.jpg' alt='First Slide'>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>CIty Black and White</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <img class='d-block w-100' src='imgs/ryantang.jpg' alt='First Slide'>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>CIty Black and White</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href='#carouselExampleIndicators' role='button' data-slide='prev'>
+      <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href='#carouselExampleIndicators' role='button' data-slide='next'>
+      <span class='carousel-control-next-icon' aria-hidden='true'></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="content-bd">
+    <div class="img1" onmouseover="desplazar_tapa_img1();" onmouseout="quitar_tapa_img1();">
+      <div class="tapa_img1" id='tapa_img1'>
+        <h2>Services</h2>
+        <img src="imgs/click01.png" onclick="mostrar_imagen_grande01();">
+        <p>Click en el logo !!</p>
+      </div>
+      <img src="imgs/city01.jpg">
+    </div>
+    <div class="img2" onmouseover="desplazar_tapa_img2();" onmouseout="quitar_tapa_img2();">
+      <div class="tapa_img2" id='tapa_img2'>
+        <h2>Work</h2>
+        <img src="imgs/click01.png" onclick="mostrar_imagen_grande02();">
+        <p>Click en el logo !!</p>
+      </div>
+      <img src="imgs/city.jpg">
+    </div>
+    <div class="img3" onmouseover="desplazar_tapa_img3();" onmouseout="quitar_tapa_img3();">
+      <div class="tapa_img3" id='tapa_img3'>
+        <h2>Contact</h2>
+        <img src="imgs/click01.png" onclick="mostrar_imagen_grande03();">
+        <p>Click en el logo !!</p>
+      </div>
+      <img src="imgs/city02.jpg">
+    </div>
+    <div class="img4" onmouseover="desplazar_tapa_img4();" onmouseout="quitar_tapa_img4();">
+      <div class="tapa_img4" id='tapa_img4'>
+        <h2>About Us</h2>
+        <img src="imgs/click01.png" onclick="mostrar_imagen_grande04();">
+        <p>Click en el logo !!</p>
+      </div>
+      <img src="imgs/city03.jpg">
+    </div>
+  </div>
+</body>
+</html>
